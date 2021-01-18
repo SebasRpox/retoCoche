@@ -1,0 +1,193 @@
+#back{
+    background: url(/img/car.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 638px;
+    position: relative;
+}
+#btn-on{
+    background-color: red;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 90%;
+    height: 55px;
+    position: relative;
+    left: 440px;
+    top: 260px;
+}
+#btn-fast{
+    background-color: red;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 25%;
+    height: 55px;
+    position: relative;
+    left: 380px;
+    top: 530px;
+}
+#btn-low{
+    background-color: red;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 25%;
+    height: 60px;
+    position: relative;
+    left: 225px;
+    top: 525px;
+}
+#btn-parking{
+    background-color: red;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10%;
+    height: 40px;
+    position: relative;
+    left: 415px;
+    top: 140px;
+}
+#btn-stop{
+    background-color: red;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 95%;
+    height: 55px;
+    position: relative;
+    left: 365px;
+    top: 290px;
+}
+#btn-left{
+    background-color: red;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 95%;
+    height: 55px;
+    position: relative;
+    right: 250px;
+    top: 295px;
+}
+#btn-parada{
+    background-color: red;
+    width: 90px;
+    font-size: 20px;
+    border-radius: 25%;
+    height: 55px;
+    position: relative;
+    left: 215px;
+    top: 400px;
+}
+#btn-right{
+    background-color: red;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 95%;
+    height: 55px;
+    position: relative;
+    left: 44px;
+    top: 295px;
+}
+#text{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    top: 300px;
+}
+#text2{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    bottom: 150px;
+}
+#destello{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 620px;
+    top: 60px;
+}
+#velocidad{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 880px;
+    top: 30px;
+}
+#cambios{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 880px;
+    top: 30px;
+}
+#state{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    top: 300px;
+}
+#state2{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    top: 300px;
+}
+#state3{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    bottom: 150px;
+}
+#state4{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    bottom: 150px;
+}
+#state5{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 900px;
+    bottom: 150px;
+}
+#state6{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 970px;
+    bottom: 13px;
+}
+#change{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 970px;
+    bottom: 13px;
+}
+#direccional{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 120px;
+    bottom: 110px;
+}
+#estacionarias{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 585px;
+    bottom: 220px;
+}
+#frenadoAzar{
+    position: absolute;
+    color: white;
+    font-size: 500px;
+    left: 550px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomo Spemo S.A.</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/img/icono.png" />
+</head>
+
+<body>
+    <div id="back">
+            <span id="frenadoAzar"></span>
+            <div id="btns">
+                <button id="btn-on" onclick="encender()">On</button>
+                <button id="btn-fast" onclick="arrancar()">AC</button>
+                <button id="btn-low" onclick="frenar()">FR</button>
+                <button id="btn-stop" onclick="frenoMano()">FRM</button>
+                <button id="btn-parking" onclick="estacionar()">Δ</button>
+                <button id="btn-right" onclick="derecha()">⇨</button>
+                <button id="btn-left" onclick="izquierda()">⇦</button>
+                <button id="btn-parada" onclick="parada()">Destino</button>
+                <p id="text">Acciones del coche:</p>
+                <p id="state">...</p>
+                <p id="state2"></p>
+                <p id="text2">Detalles:</p>
+                <p id="state3">...</p>
+                <p id="state4"></p>
+                <p id="state5"></p>
+                <p id="velocidad">Velocidad:</p>
+                <p id="state6"></p>
+                <p id="cambios">Cambios:</p>
+                <p id="change"></p>
+                <p id="destello"></p>
+                <p id="direccional"></p>
+                <p id="estacionarias"></p>
+            </div>
+    </div>
+    <script src="coche.js"></script>
+</body>
+
+</html>
