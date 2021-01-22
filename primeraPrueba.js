@@ -134,7 +134,7 @@ function arrancar() {
                     clearInterval(y);
                     clearInterval(x);
                     document.getElementById("state").innerHTML = "Reversando...";
-                    function wait2() {
+                    function wait2() {      
                         document.getElementById("state").innerHTML = "Por favor ponga el freno de mano";
                         document.getElementById("state2").innerHTML = "para apagar el vehiculo";
                         movimiento = false;

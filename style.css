@@ -15,7 +15,17 @@
     height: 55px;
     position: relative;
     left: 435px;
-    top: 70px;
+    top: 30px;
+}
+#encender:focus{
+    background-color: green;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 90%;
+    height: 55px;
+    position: relative;
+    left: 435px;
+    top: 30px;
 }
 #acelerar{
     background-color: red;
@@ -25,7 +35,17 @@
     height: 55px;
     position: relative;
     left: 380px;
-    top: 350px;
+    top: 300px;
+}
+#acelerar:focus{
+    background-color: green;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 25%;
+    height: 55px;
+    position: relative;
+    left: 380px;
+    top: 300px;
 }
 #frenar{
     background-color: red;
@@ -35,7 +55,17 @@
     height: 60px;
     position: relative;
     left: 225px;
-    top: 340px;
+    top: 280px;
+}
+#frenar:focus{
+    background-color: green;
+    width: 60px;
+    font-size: 20px;
+    border-radius: 25%;
+    height: 60px;
+    position: relative;
+    left: 225px;
+    top: 280px;
 }
 #parqueo{
     background-color: red;
@@ -45,7 +75,17 @@
     height: 40px;
     position: relative;
     left: 280px;
-    bottom: 40px;
+    bottom: 100px;
+}
+#parqueo:focus{
+    background-color: green;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 10%;
+    height: 40px;
+    position: relative;
+    left: 280px;
+    bottom: 100px;
 }
 #frenoMano{
     background-color: red;
@@ -55,7 +95,17 @@
     height: 55px;
     position: relative;
     left: 350px;
-    top: 100px;
+    top: 70px;
+}
+#frenoMano:focus{
+    background-color: green;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 95%;
+    height: 55px;
+    position: relative;
+    left: 350px;
+    top: 70px;
 }
 #izquierda{
     background-color: red;
@@ -65,7 +115,37 @@
     height: 55px;
     position: relative;
     right: 200px;
-    top: 105px;
+    top: 70px;
+}
+#izquierda:focus{
+    background-color: green;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 95%;
+    height: 55px;
+    position: relative;
+    right: 200px;
+    top: 70px;
+}
+#destino{
+    background-color: red;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 15%;
+    height: 40px;
+    position: relative;
+    left: 300px;
+    top: 70px;
+}
+#destino:focus{
+    background-color: green;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 15%;
+    height: 40px;
+    position: relative;
+    left: 300px;
+    top: 70px;
 }
 #derecha{
     background-color: red;
@@ -75,7 +155,17 @@
     height: 55px;
     position: relative;
     left: 80px;
-    top: 105px;
+    top: 70px;
+}
+#derecha:focus{
+    background-color: green;
+    width: 55px;
+    font-size: 20px;
+    border-radius: 95%;
+    height: 55px;
+    position: relative;
+    left: 80px;
+    top: 70px;
 }
 #distancia-recorrida{
     color: white;
@@ -106,6 +196,13 @@
     top: 100px;
 }
 #cambios{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    left: 880px;
+    top: 100px;
+}
+#tiempo-coche{
     color: white;
     font-size: 20px;
     position: relative;

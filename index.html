@@ -21,22 +21,26 @@
         <div id="velocidad">
             <p id="velocidad-coche">Velocidad: 0 Km/h</p>
         </div>
+        <div id="tiempo">
+            <p id="tiempo-coche">Tiempo: 0 s</p>
+        </div>
         <div id="div-cambios">
-            <p id="cambios">Cambios: 0 </p>
+            <p id="cambios">Cambios: </p>
         </div>
         <div id="botones">
-            <button id="encender" onclick="">ON</button>
-            <button id="acelerar" onclick="">AC</button>
-            <button id="frenar" onclick="">FR</button>
-            <button id="frenoMano" onclick="">FRM</button>
-            <button id="derecha" onclick="">⇨</button>
-            <button id="izquierda" onclick="">⇦</button>
-            <button id="parqueo" onclick="">Δ</button>
+            <button id="encender" onclick="encender()">ON</button>
+            <button id="acelerar" onclick="acelerar()">AC</button>
+            <button id="frenar" onclick="frenar()">FR</button>
+            <button id="frenoMano" onclick="frenoMano()">FRM</button>
+            <button id="derecha" onclick="derecha()">⇨</button>
+            <button id="izquierda" onclick="izquierda()">⇦</button>
+            <button id="parqueo" onclick="estacionar()">Δ</button>
+            <button id="destino" onclick="destino()">Destino</button>
         </div>
     </div>
-    
     <footer>By: Sebas Restrepo <br>Créditos: Academia Geek</footer>
+    
+    <!-- <script src="primeraPrueba.js"></script> -->
     <script src="control.js"></script>
 </body>
-
 </html>
