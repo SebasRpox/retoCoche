@@ -2,9 +2,14 @@ var numParadas = 0,
     distancia = 0,
     tiempoParada = 0,
     kmParada = 0,
-    x = 0,
-    y = 0,
+    x = null,
+    y = null,
     i = 0,
+    km = 0,
+    veloz = 0,
+    ne = 0,
+    me = 0,
+    it = 0,
     distanciaFinal = 0,
     encendido = false,
     frm = false,
@@ -60,35 +65,30 @@ function frenoMano() {
     }
 }
 function tiempoViaje() {
-    var n = 0;
-    var m = 0;
-    var it = 0;
+    
     function timer() {
-        document.getElementById("tiempo-coche").innerHTML = "Tiempo: " + n + " s";
-        n++;
-        if (n >= 60 && n <= 119) {
+        document.getElementById("tiempo-coche").innerHTML = "Tiempo: " + ne + " s";
+        ne++;
+        if (ne >= 60 && ne <= 119) {
             document.getElementById("tiempo-coche").innerHTML = "Tiempo: 1:" + it + " s";
             it++;
-        } else if (n >= 120 && n <= 179) {
-            document.getElementById("tiempo-coche").innerHTML = "Tiempo: 2:" + m + " s";
-            m++;
-        } else if (n >= 180) {
+        } else if (ne >= 120 && ne <= 179) {
+            document.getElementById("tiempo-coche").innerHTML = "Tiempo: 2:" + me + " s";
+            me++;
+        } else if (ne >= 180) {
             document.getElementById("tiempo-coche").innerHTML = "Llevas mas de 3 minutos conduciendo";
         }
     }
-    x = setInterval(timer, 500);
+    x = window.setInterval(timer, 500);
 }
 function acelerar() {
     if (encendido == true && frm == false && destine == true) {
         movimiento = true;
-        var km = 1;
-        var veloz = 0;
         tiempoViaje();
-        //Para agregar frenadoAzar() se deben reiniciar los setTimers
-        /* function wait(){
+        function wait(){
             frenadoAzar();
         }
-        setTimeout(wait, 55E3); */   
+        setTimeout(wait, 35E3);  
         document.getElementById("panel-control").innerHTML = "En movimiento";
         document.getElementById("cambios").innerHTML = "Cambios: 1";
         distanciaFinal = distancia * 1000;
@@ -114,8 +114,8 @@ function acelerar() {
                 document.getElementById("velocidad-coche").innerHTML = "Velocidad: 200Km/h";
                 km += 20;
             } if (km >= distanciaFinal) {
-                clearInterval(y);
-                clearInterval(x);
+                window.clearInterval(y);
+                window.clearInterval(x);
                 movimiento = false;
                 alert("¡Has llegado a tu destino!");
                 document.getElementById("cambios").innerHTML = "Cambios: N";
@@ -129,7 +129,7 @@ function acelerar() {
                 document.getElementById("distancia-recorrida").innerHTML = "Distancia recorrida: " + distanciaFinal + " metros";
             }
         }
-        y = setInterval(acelera, 500);
+        y = window.setInterval(acelera, 500);
     } else if (frm == true) {
         document.getElementById("panel-control").innerHTML = "Freno de mano activado";
     } else if (encendido == false) {
@@ -273,6 +273,8 @@ function frenadoAzar() {
         if (tiempoParada == 0) {
             document.getElementById("tablero").style.zIndex = 1;
             document.getElementById("panel-control").innerHTML = "¡En marcha! De nuevo";
+            clearInterval(y);
+            clearInterval(x);
             function wait() {
                 document.getElementById("panel-control").innerHTML = "";
             }
